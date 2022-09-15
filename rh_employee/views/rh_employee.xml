@@ -1,0 +1,15 @@
+<odoo>
+   <record id="inherited_model_view_form" model="ir.ui.view">
+    <field name="name">rh-employee</field>
+    <field name="model">RH-employee</field>
+    <field name="rh_employee_inherit_id" ref="RH-employee_view_form"/>
+    <field name="arch" type="xml">
+             <xpath expr="//field[@name='description']" position="after">
+                <field name="mode_de_travaill"/>
+             </xpath>
+            <xpath expr="//field[@name='mode_de_travaill']" position="after">
+                <field name="années_d'expérience"/>
+             </xpath>
+        </field>
+    </record>
+</odoo>
